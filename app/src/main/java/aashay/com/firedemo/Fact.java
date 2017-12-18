@@ -21,7 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Fact extends AppCompatActivity {
 
     Button post;
-    EditText data;
+    EditText data, name;
     FirebaseAuth.AuthStateListener listener;
     DatabaseReference ref;
     FirebaseUser user;
@@ -37,6 +37,7 @@ public class Fact extends AppCompatActivity {
         data = findViewById(R.id.data);
         complete = findViewById(R.id.completeText);
         text = findViewById(R.id.text);
+        name = findViewById(R.id.name);
 
         complete.setVisibility(View.INVISIBLE);
 
@@ -49,17 +50,18 @@ public class Fact extends AppCompatActivity {
         post.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(data.getText().toString().trim().length() > 0){
+                if(data.getText().toString().trim().length() > 0 && name.getText().toString().trim().length() > 0){
                     FirebaseDatabase database = FirebaseDatabase.getInstance();
-                    ref = database.getReference().child("facts").child(user.getUid()).push();
+                    ref = database.getReference().child("facts").child(name.getText().toString()).push();
                     ref.setValue(data.getText().toString());
                     text.setText(data.getText().toString());
                     data.setText("");
+                    name.setText("");
                     complete.setVisibility(View.VISIBLE);
 
                 }
                 else{
-                    Toast.makeText(getBaseContext(),"This field cannot be blank",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(),"Some fields are blank",Toast.LENGTH_LONG).show();
                 }
             }
         });

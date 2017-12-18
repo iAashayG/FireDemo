@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                             FirebaseUser user = auth.getCurrentUser();
-                            if(user.getEmail().endsWith("@simprints.com")){
+                            if(user.getEmail().endsWith("@gmail.com")){
                                 Intent i = new Intent(MainActivity.this, Fact.class);
                                 startActivity(i);
                             }

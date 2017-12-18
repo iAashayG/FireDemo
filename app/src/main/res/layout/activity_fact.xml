@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#000000"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="120dp"
             android:layout_gravity="center"
             android:id="@+id/text"
             android:text=""
@@ -46,14 +46,19 @@
             android:inputType="textMultiLine"
             android:hint="The magical fact goes here!"
             />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/name"
+            android:hint="Name of the person"/>
 
         <Button
             android:id="@+id/post"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/data"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:text="Post Fact"
             android:layout_gravity="center"/>
 
