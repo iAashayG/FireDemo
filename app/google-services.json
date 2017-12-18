@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "1003460749433",
+    "firebase_url": "https://dermoscopy-aa5ae.firebaseio.com",
+    "project_id": "dermoscopy-aa5ae",
+    "storage_bucket": "dermoscopy-aa5ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003460749433:android:53a73dbbb884e030",
+        "android_client_info": {
+          "package_name": "aashay.com.firedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003460749433-4vqu043mbhbebsjip73st2g03ps878qq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "aashay.com.firedemo",
+            "certificate_hash": "139b2e32d1b541ba626bee022ab2c12330d2a39b"
+          }
+        },
+        {
+          "client_id": "1003460749433-r8rq4t9udvc73jg4389l58dm58fo1ls0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-5XuNw4dAp0_1LysYUZsN9oPAOYw-paQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003460749433-r8rq4t9udvc73jg4389l58dm58fo1ls0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1003460749433-rd20b67s3074qr4htk6i1cjm8q97fucr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aashay.Derma"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
